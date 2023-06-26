@@ -6,10 +6,6 @@ import './App.css';
 import { useState } from 'react';
 
 export const App = () => {
-  // const [good, setGood] = useState(0);
-  // const [bad, setBad] = useState(0);
-  // // const [neutral, setNeutral] = useState(0);
-
   const [feedback, setFeedback] = useState({
     good: 0,
     bad: 0,
@@ -24,22 +20,6 @@ export const App = () => {
     }));
   };
 
-  // const handleLeaveFeedback = name => {
-  //   switch (name) {
-  //     case 'good':
-  //       setGood(prevGood => prevGood + 1);
-  //       break;
-  //     case 'bad':
-  //       setBad(prevBad => prevBad + 1);
-  //       break;
-  //     case 'neutral':
-  //       setNeutral(prevNeutral => prevNeutral + 1);
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // };
-
   const countTotalFeedback = () => {
     return good + neutral + bad;
   };
@@ -52,7 +32,7 @@ export const App = () => {
   return (
     <Section title={'Please leave feedback'}>
       <FeedbackOptions
-        options={['good', 'neutral', 'bad']}
+        options={Object.keys(feedback)}
         onLeaveFeedback={handleFeedback}
       />
       {countTotalFeedback() ? (
