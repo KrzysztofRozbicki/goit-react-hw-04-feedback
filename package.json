@@ -1,9 +1,9 @@
 {
-  "name": "goit-react-hw-02-feedback",
+  "name": "goit-react-hw-04-feedback",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://KrzysztofRozbicki.github.io/goit-react-hw-02-feedback",
+  "homepage": "https://KrzysztofRozbicki.github.io/goit-react-hw-04-feedback",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
